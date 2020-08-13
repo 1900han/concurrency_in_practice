@@ -1,7 +1,4 @@
-package threadcoreknowledge;
-
-import threadcoreknowledge.createthreads.RunnableStyle;
-import threadcoreknowledge.createthreads.ThreadStyle;
+package threadcoreknowledge.createthreads;
 
 public class Main {
 
