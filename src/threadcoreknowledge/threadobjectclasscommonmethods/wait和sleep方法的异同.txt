@@ -1,0 +1,8 @@
+相同：
+1.wait()和sleep()都可以让线程阻塞，对应线程状态是waiting或time_waiting
+2.wait()和sleep()都可以响应中断Thread.interrupt()
+不同
+1.wait()的执行必须在同步方法中进行，sleep()不需要
+2.在同步方法里执行sleep()时，不会释放monitor锁，但是wait()会释放monitor锁
+3.sleep()短暂休眠之后会主动退出阻塞，而没有指定时间的wait()则需要被其他线程中断后才能退出阻塞
+4.wait()和notify(),notifyAll()是Object的方法，sleep()和yield()是Thread的方法
