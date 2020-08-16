@@ -1,0 +1,5 @@
+1. （不推荐）手动在每个run()里进行try/catch
+2. （推荐）利用UncaughtExceptionHandler
+    2.1 给程序统一设置
+    2.2 给每个线程单独设置
+    2.3 给线程池设置
